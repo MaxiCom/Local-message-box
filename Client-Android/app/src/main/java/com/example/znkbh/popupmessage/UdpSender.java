@@ -13,7 +13,8 @@ public class UdpSender {
     public static void sendMessage(String message) {
         try {
             clientSocket = new DatagramSocket();
-            HOST = InetAddress.getByName("192.168.1.37");
+            clientSocket.setBroadcast(true);
+            HOST = InetAddress.getByName("192.168.1.255");
             packet = new DatagramPacket(message.getBytes(), message.getBytes().length, HOST, PORT);
             
             clientSocket.send(packet);
