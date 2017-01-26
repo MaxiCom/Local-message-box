@@ -11,7 +11,7 @@ class Server:
 		print '\033[32mServer listening ... Done!\033[m'
 		
 		while True:
-			data, address = self.server.recvfrom(1024)
+			data, address = self.server.recvfrom(4096)
 			message_box.display_message(address[0], data)
 
 	def close(self):

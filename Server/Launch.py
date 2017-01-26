@@ -2,7 +2,7 @@
 from modules.server import *
 from modules.message_box import *
 
-HOST = ''
+HOST = 'localhost'
 PORT = 51515
 
 def main():
