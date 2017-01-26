@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Local Message Box</string>
+    <string name="send_button_text">SEND</string>
+</resources>
